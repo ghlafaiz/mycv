@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Project</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">Ghla <span>Faiz</span></a>
+    <nav class="navbar">
+      <a href="index.html">HOME</a>
+      
+      <a href="index.html#contact">CONTACT</a>
+      <a href="projects.html" class="active">PROJECT</a>
+    </nav>
+  </header>
+<section class="projects">
+  <h1 class="heading">Featured <span>Project</span></h1>
+
+  <!-- المشروع الأول -->
+  <div class="project-box">
+    <img src="cyber.JPG"Personality Test Project">
+    <div class="project-info">
+      <h3>cyber Security</h3>
+      <p>
+     <p>
+Completed a cybersecurity training covering basic security concepts, threats, and protection methods.
+<br><strong>Type:</strong> In-person (Riyadh)
+</p>
+
+      </p>
+      <a href="#" class="btn" onclick="openImage('cyber.JPG')">View Certificate</a>
+    </div>
+  </div>
+
+  <!-- المشروع الثاني (نفس البوكس بالضبط) -->
+  <div class="project-box">
+    <img src="focus.PNG" alt="Cyber Project">
+    <div class="project-info">
+      <h3>digital awareness</h3>
+      <p>
+    <p>
+Completed a training program focused on digital awareness and essential technical skills.
+<br><strong>Type:</strong> Online
+</p>
+      </p>
+      <a href="#" class="btn" onclick="openImage('focus.PNG')">View Certificate</a>
+    </div>
+  </div>
+  <div class="project-box">
+    <img src="Callcentre.pdf.jpg" alt="Cyber Project">
+    <div class="project-info">
+      <h3>Call Center </h3>
+      <p>
+    <p>
+Completed a customer service course focusing on communication skills and handling clients professionally.
+<br><strong>Type:</strong> Online
+</p>
+      </p>
+      <a href="#" class="btn" onclick="openImage('Callcentre.pdf.jpg')">View Certificate</a>
+    </div>
+  </div>
+  <div class="project-box">
+    <img src="htmml.png" alt="Cyber Project">
+    <div class="project-info">
+      <h3>introduction to HTML</h3>
+      <p>
+   <p>
+Completed a customer service course
+ focusing on communication skills and handling clients professionally.
+<br><strong>Type:</strong> Online
+</p>
+
+      </p>
+    <a href="#" class="btn" onclick="openImage('htmml.png')">View Certificate</a>
+    </div>
+  </div>
+  <div class="project-box">
+    <img src="css.png" alt="Cyber Project">
+    <div class="project-info">
+      <h3>introduction to CSS</h3>
+      <p>
+  <p>
+Learned CSS styling including layouts, colors, and responsive design for modern websites.
+<br><strong>Type:</strong> Online
+</p>
+      </p>
+      <a href="#" class="btn" onclick="openImage('css.png')">View Certificate</a>
+    </div>
+  </div>
+ <div class="project-box">
+    <img src="certificate (3) (1).png" alt="Cyber Project">
+    <div class="project-info">
+      <h3>Cyber Security Project</h3>
+      <p>
+ <p>
+Completed a course on cybersecurity concepts, threats, and basic protection methods.
+<br><strong>Type:</strong> Online
+</p>
+      </p>
+      <a href="#" class="btn" onclick="openImage('certificate (3) (1).png')">View Certificate</a>
+    </div>
+  </div>
+</section>
+<script>
+function openImage(src) {
+  document.getElementById("popup").style.display = "flex";
+  document.getElementById("popup-img").src = src;
+}
+
+function closeImage() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+
+<div id="popup" class="popup">
+  <span onclick="closeImage()">&times;</span>
+  <img id="popup-img">
+</div>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">
+      Ghla <span>Faiz</span>
+    </a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="index.html">HOME</a>
+      <a href="content.html">CONTACT</a>
+      <a href="projects.html">PROJECTS</a>
+
+    </nav>
+
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi, it's <span>GHLA</span></h1>
+      <h3 class="text-animate">I'm a <span></span></h3>
+
+      <p><p>I'm Ghla Faiz, a backend developer with a 
+        strong passion for building efficient, secure, and 
+        scalable systems. I enjoy solving real-world problems with 
+        clean and powerful code. My goal is to join a global tech company
+         where I can grow, contribute, and make an impact.</p>
+</p>
+
+      <div class="social-icons">
+        <a href="https://github.com/ghlafaiz"><i class='bx bxl-github'></i></a>
+        <a href="https://x.com/ghlafaiz"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.linkedin.com/in/ghla-almutairi-a986b0352/"><i class='bx bxl-linkedin'></i></a>
+      </div>
+
+      <div class="btn-group">
+        <a href="mailto:ghlafaiz@gmail.com" class="btn">Hire</a>
+
+        <a href="content.html" class="btn">Contact</a>
+      </div>
+    </div>
+
+    <div class="home-img">
+      <img src="image.jpg" alt="My Image">
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
+  <script>
+function openImage(src) {
+  document.getElementById("popup").style.display = "flex";
+  document.getElementById("popup-img").src = src;
+}
+
+function closeImage() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+<div id="popup" class="popup">
+  <span onclick="closeImage()">&times;</span>
+  <img id="popup-img">
+</div>
+</body>
+
+</html>
