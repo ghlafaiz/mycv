@@ -249,7 +249,7 @@ span {
   position: relative;
 }
 .text-animate span::before {
-  content: "web Developer";
+  content: "Cybersecurity";
   color: var(--main-color);
   animation: words 20s infinite;
 }
@@ -272,10 +272,10 @@ span {
 }
 @keyframes words {
   0%, 20% {
-    content:  "web Developer";
+    content:  "Networking";
 
   }
-  21% , 40%{content: " back end devloper";
+  21% , 40%{content: "Student";
 
 }
 
