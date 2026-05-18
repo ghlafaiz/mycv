@@ -519,9 +519,6 @@ section {
       .contact-right {
         flex: 1 1 100%;
       }
-    }.project-box {
-  width: 100%;
-}
 
 .projects {
   display: grid;
